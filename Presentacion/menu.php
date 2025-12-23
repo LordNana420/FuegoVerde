@@ -40,7 +40,8 @@ if(isset($_SESSION["rol"])){
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 
                 <li class="nav-item">
-                    <a class="nav-link active" href="?pid=<?php echo base64_encode('presentacion/inicio.php') ?>">
+                    <a class="nav-link active" href="?pid=<?php echo base64_encode('presentacion/inicio.php')
+ ?>">
                         <i class="fas fa-home"></i> Inicio
                     </a>
                 </li>
@@ -58,7 +59,11 @@ if(isset($_SESSION["rol"])){
                     <li class="nav-item"><a class="nav-link" href="#">Gestionar Inventario</a></li>
 
                 <?php elseif ($_SESSION["rol"] == "empleadoVend"): ?>
-                    <li class="nav-item"><a class="nav-link" href="#">Vender Productos</a></li>
+                    <li class="nav-item"><a class="nav-link" 
+   href="index.php?pid=<?php echo base64_encode('Presentacion/Producto/VenderProducto.php'); ?>">
+    Vender Productos
+</a>
+</li>
                     <li class="nav-item"><a class="nav-link" href="#">Mis Ventas del Día</a></li>
 
                 <?php elseif ($_SESSION["rol"] == "empleadoInt"): ?>

@@ -1,7 +1,7 @@
 <?php
-require_once("persistencia/Conexion.php");
-require_once("persistencia/AdminDAO.php");
-
+require_once __DIR__ . '/../Persistencia/Conexion.php';
+require_once __DIR__ . '/../Persistencia/AdminDAO.php';
+require_once __DIR__ . '/Persona.php';
 class Admin extends Persona {
 
     public function __construct($id=0, $nombre="", $apellido="", $usuario="", $clave="",$rol="",$estado="" ){

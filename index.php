@@ -4,6 +4,8 @@ require_once ("logica/Persona.php");
 require_once ("logica/Admin.php");
 require_once ("logica/EmpleadoInv.php");
 require_once ("logica/EmpleadoVend.php");
+require_once ("logica/Producto.php");
+
 
 if (isset($_GET["salir"])) {
     session_unset();
