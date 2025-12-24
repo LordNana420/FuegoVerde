@@ -54,20 +54,16 @@ if(isset($_SESSION["rol"])){
                             <li><a class="dropdown-item" href="#">Listar Usuarios</a></li>
                         </ul>
                     </li>
-<<<<<<< Updated upstream
                     <li class="nav-item"><a class="nav-link" href="#">Comprar Producto</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Vender</a></li>
+                    <li class="nav-item">
+
+                    <a class="nav-link" href="index.php?pid=<?php echo base64_encode('Presentacion/Producto/VenderProducto.php'); ?>" >Vender</a>
+                    </li>
                     <li class="nav-item">
     <a class="nav-link" href="index.php?pid=<?php echo base64_encode('Presentacion/Inventario/inventario.php'); ?>">
         Gestionar Inventario
     </a>
 </li>
-=======
-                    <li class="nav-item"><a class="nav-link" href="#">Comprar Insumos</a></li>
-                    <li class="nav-item"><a class="nav-link" href="index.php?pid=<?php echo base64_encode('Presentacion/Producto/VenderProducto.php'); ?>" >Vender</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Gestionar Inventario</a></li>
-
->>>>>>> Stashed changes
                 <?php elseif ($_SESSION["rol"] == "empleadoVend"): ?>
                     <li class="nav-item"><a class="nav-link" 
    href="index.php?pid=<?php echo base64_encode('Presentacion/Producto/VenderProducto.php'); ?>">
