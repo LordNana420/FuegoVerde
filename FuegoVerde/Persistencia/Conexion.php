@@ -24,14 +24,8 @@ class Conexion{
     public function filas(){
         return $this -> resultado -> num_rows;
     }
-    // Agrégalo a tu archivo Persistencia/Conexion.php
-public function obtenerId(){
-    return $this->conexion->insert_id;
-}
-
     
 }
-
 
 
 ?>
