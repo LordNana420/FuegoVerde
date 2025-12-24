@@ -46,7 +46,7 @@ class Producto{
     public function crear(){
         $conexion = new Conexion();
         $conexion -> abrir();
-        $productoDAO = new ProductoDAO("", $this -> nombre, $this -> precio);        
+        $productoDAO = new ProductoDAO("", $this -> nombre,  $this -> precio,$this->cantidad_Stock);        
         $conexion -> ejecutar($productoDAO -> crear());
         $conexion -> cerrar();
     }
